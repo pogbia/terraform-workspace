@@ -22,7 +22,7 @@ resource "aws_instance" "my_instance" {
   instance_type          = var.instance_type
   tags                   = local.common_tags
   vpc_security_group_ids = [aws_security_group.my_sg_web.id]
-  key_name               = aws_key_pair.my_sshkey.key_name
+  #key_name               = aws_key_pair.my_sshkey.key_name
   subnet_id              = module.my_vpc.public_subnets["${count.index}"] # 리스트 - 0번
 
   #user_data = file(./web-deploy.sh)
