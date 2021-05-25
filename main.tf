@@ -72,10 +72,10 @@ resource "aws_instance" "my_instance" {
   #     EOF  
   #   }
 }
-resource "aws_key_pair" "my_sshkey" {
-  key_name   = "my_sshkey"
-  public_key = file("./my_sshkey.pub")
-}
+# resource "aws_key_pair" "my_sshkey" {
+#   key_name   = "my_sshkey"
+#   public_key = file("./my_sshkey.pub")
+# }
 
 
 
