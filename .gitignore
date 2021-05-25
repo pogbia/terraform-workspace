@@ -1,0 +1,5 @@
+my_sshkey*
+terraform.tfstate*
+terraform.tfvars
+inventory.ini
+.terraform
